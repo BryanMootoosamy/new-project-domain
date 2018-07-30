@@ -19,9 +19,9 @@
         </div>
         <div class="navigation" id="navigation">
             <ul class="menu">
-                <li><a class="menu-item" href="index.php">Homepage</a></li>
+                <li><a class="menu-item" href="{{ url('/') }}">Homepage</a></li>
                 <li id="flux"><a class="menu-item" href="index.php?action=espaceperso">Espace Personnel</a></li>
-                <li><a class="menu-item" href="index.php?action=portfolio">Portfolio</a></li>
+                <li><a class="menu-item" href="{{ url('portfolio') }}">Portfolio</a></li>
             </ul>
         </div>
         <div class="sp-container">
@@ -38,6 +38,7 @@
                 </h2>
                 <a class="sp-circle-link" href="https://github.com/BryanMootoosamy?tab=repositories">Bryan</a>
             </div>
-    </div>
+        </div>
     </body>
+    <script src="{{ asset('js/burger-button.js') }}"></script>
 </html>

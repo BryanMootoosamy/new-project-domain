@@ -35,6 +35,9 @@
         margin-top: 10%;
     }
 }
+.burger-button-moved{
+    transform: translateX(50vw);
+}
 .navigation{
     position: absolute;
     top:15vh;
@@ -56,6 +59,10 @@
             }
         }
     }
+}
+.navigation-moved{
+    z-index: 1;
+    transform: translateX(0);
 }
 .sp-container{
     z-index: 0;

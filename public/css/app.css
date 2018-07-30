@@ -340,6 +340,11 @@ table {
   margin-top: 10%;
 }
 
+.burger-button-moved {
+  -webkit-transform: translateX(50vw);
+          transform: translateX(50vw);
+}
+
 .navigation {
   position: absolute;
   top: 15vh;
@@ -364,6 +369,12 @@ table {
 .navigation ul li a {
   text-decoration: none;
   color: rgba(24, 3, 3, 0.938);
+}
+
+.navigation-moved {
+  z-index: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .sp-container {
