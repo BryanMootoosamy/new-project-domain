@@ -26,8 +26,8 @@
         </div>
         <div id='folio'>
             <h2>A propos</h2>
-            <div id="imageHead">
-                <!-- <img src="assets/pics/face.jpg" alt="Photo de profil"> -->
+            <div id="profile-image">
+                <img src="{{ asset('images/face.jpg') }}" alt="Photo de profil">
             </div>
             <section class="content">
                 <section class="left">

@@ -493,3 +493,24 @@ table {
           transform: scale(1) rotate(0deg);
 }
 
+#folio {
+  z-index: 0;
+  height: 85vh;
+  width: 100vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url(/images/backgroundmin.png?6a82a874523c7340518b498afae4e86e);
+  background-image: linear-gradient(180deg, black 0%, transparent 100%), url(/images/backgroundmin.png?6a82a874523c7340518b498afae4e86e);
+  background-size: cover;
+  text-align: center;
+}
+
+#folio h2 {
+  font-family: "Roboto Mono";
+  font-size: 1.5em;
+  color: white;
+}
+
+#folio #profile-image img {
+  border-radius: 100%;
+  width: 25%;
+}
+
