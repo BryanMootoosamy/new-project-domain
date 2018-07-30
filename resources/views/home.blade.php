@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{app()->getLocale()}}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,22 @@
         <title>Home</title>
     </head>
     <body>
-        <h1 class="title">Bryan's Domain</h1>
+        <div class="header-container">
+            <h1 class="title">Bryan's Domain</h1>
+            <p class="under-title">"Oh look ! A penny !"</p>
+        </div>
+        <div id="burger-button">
+                <div id="lign-1"></div>
+                <div id="lign-2"></div>
+                <div id="lign-3"></div>
+        </div>
+        <div class="navigation" id="navigation">
+            <ul class="menu">
+                <li><a class="menu-item" href="index.php">Homepage</a></li>
+                <li id="flux"><a class="menu-item" href="index.php?action=espaceperso">Espace Personnel</a></li>
+                <li><a class="menu-item" href="index.php?action=portfolio">Portfolio</a></li>
+            </ul>
+        </div>
         <div class="sp-container">
             <div class="sp-content">
                 <div class="sp-globe"></div>

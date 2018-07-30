@@ -296,7 +296,189 @@ table {
   }
 }
 
-body h2 {
+.header-container {
+  z-index: 0;
+  height: 15vh;
+  width: 100vw;
+  background-image: url(/images/backgroundmin.png?6a82a874523c7340518b498afae4e86e);
+  background-repeat: no-repeat;
+  font-size: 1.8em;
   font-family: "Roboto Mono";
+  color: antiquewhite;
+  text-align: center;
+}
+
+.header-container .title {
+  padding-top: 2.2vh;
+}
+
+.header-container .under-title {
+  padding-top: 1vh;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+#burger-button {
+  z-index: 1;
+  position: absolute;
+  top: 15vh;
+  height: 6.5vh;
+  width: 11vw;
+  background-color: black;
+  border-radius: 100%;
+  padding-top: 1.7vh;
+  padding-left: 4vw;
+  margin-left: 3vw;
+}
+
+#burger-button #lign-1,
+#burger-button #lign-2,
+#burger-button #lign-3 {
+  height: 10%;
+  width: 60%;
+  background-color: #00ff55;
+  margin-top: 10%;
+}
+
+.navigation {
+  position: absolute;
+  top: 15vh;
+  height: 85vh;
+  width: 50vw;
+  color: black;
+  background-color: whitesmoke;
+  font-family: "Gugi";
+  font-size: 2em;
+  -webkit-transform: translateX(-50vw);
+          transform: translateX(-50vw);
+}
+
+.navigation ul {
+  text-align: center;
+}
+
+.navigation ul li {
+  margin-top: 20%;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: rgba(24, 3, 3, 0.938);
+}
+
+.sp-container {
+  z-index: 0;
+  position: fixed;
+  width: 100vw;
+  height: 85vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url(/images/backgroundmin.png?6a82a874523c7340518b498afae4e86e);
+  background-image: linear-gradient(180deg, black 0%, transparent 100%), url(/images/backgroundmin.png?6a82a874523c7340518b498afae4e86e);
+  background-size: cover;
+}
+
+.sp-container .sp-content {
+  z-index: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.sp-container .sp-content h2 {
+  z-index: inherit;
+  width: 100%;
+  height: 4vh;
+  position: absolute;
+  top: 25%;
+  line-height: 18vh;
+  margin-top: -3vh;
+  font-size: 3em;
+  text-align: center;
+  color: transparent;
+  -webkit-animation: blurFadeInOut 3s ease-in backwards;
+          animation: blurFadeInOut 3s ease-in backwards;
+}
+
+.sp-container .sp-content .frame-1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.sp-container .sp-content .frame-2 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.sp-container .sp-content .frame-3 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.sp-container .sp-content .frame-4 {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.sp-container .sp-content .frame-5 {
+  top: 20%;
+  -webkit-animation: none;
+          animation: none;
+  text-shadow: 0 0 1px #fff;
+}
+
+.sp-container .sp-content .frame-5 span {
+  -webkit-animation: blurFadeIn 3s ease-in 12s backwards;
+          animation: blurFadeIn 3s ease-in 12s backwards;
+  color: transparent;
+  text-shadow: 0 0 1px #fff;
+}
+
+.sp-container .sp-content .frame-5 span:nth-child(2) {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.sp-container .sp-content .frame-5 span:nth-child(3) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.sp-container .sp-content .sp-globe {
+  z-index: inherit;
+  position: absolute;
+  width: 282px;
+  height: 273px;
+  left: 50%;
+  top: 50%;
+  margin: -173px 0 0 -141px;
+  -webkit-animation: fadeInBack 3.6s linear 14s backwards;
+          animation: fadeInBack 3.6s linear 14s backwards;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  -webkit-transform: scale(5);
+          transform: scale(5);
+}
+
+.sp-container .sp-content .sp-circle-link {
+  z-index: inherit;
+  position: absolute;
+  left: 50%;
+  top: 60vh;
+  bottom: 100px;
+  margin-left: -50px;
+  margin-top: 10vh;
+  text-align: center;
+  line-height: 10vh;
+  width: 20vw;
+  height: 11.5vh;
+  background: #fff;
+  color: #3f1616;
+  font-size: 2em;
+  border-radius: 50%;
+  -webkit-animation: fadeInRotate 1s linear 16s backwards;
+          animation: fadeInRotate 1s linear 16s backwards;
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
 }
 
