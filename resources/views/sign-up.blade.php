@@ -47,4 +47,5 @@
             </div>
         </section>
     </body>
+    <script src="{{ asset('js/burger-button.js') }}"></script>
 </html>
