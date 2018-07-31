@@ -17,3 +17,16 @@ Route::get('/', function () {
 Route::get('portfolio', function () {
     return view('portfolio');
 });
+route::get('tchat', function () {
+    if (isset($_SESSION['email']) && !empty($_SESSION['email'])) {
+        echo "lol";
+    } else {
+        return view('sign-up');
+    }
+});
+route::get('sign-in', function () {
+    return view('sign-in');
+});
+route::get('sign-up', function () {
+    return view('sign-up');
+});

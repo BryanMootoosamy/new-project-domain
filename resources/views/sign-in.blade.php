@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/app.css">
-        <title>Home</title>
+        <title>Tchat</title>
     </head>
     <body>
         <div class="header-container">
@@ -24,21 +24,21 @@
                 <li><a class="menu-item" href="{{ url('portfolio') }}">Portfolio</a></li>
             </ul>
         </div>
-        <div class="sp-container">
-            <div class="sp-content">
-                <div class="sp-globe"></div>
-                <h2 class="frame-1">BIENVENUE</h2>
-                <h2 class="frame-2">PRENEZ UN SIÈGE</h2>
-                <h2 class="frame-3">PENSEZ À VISITER MON PORTEFOLIO</h2>
-                <h2 class="frame-4">C'EST SYMPA</h2>
-                <h2 class="frame-5">
-                    <span class="span1">PASSIONNÉ,</span>
-                    <span class="span2">TRAVAILLEUR,</span>
-                    <span class="span3">MOTIVÉ.</span>
-                </h2>
-                <a class="sp-circle-link" href="https://github.com/BryanMootoosamy?tab=repositories">Bryan</a>
+        <section class="site-content">
+            <div class="form-container">
+                <h3>Inscription</h3>
+                {{ Form::open() }}
+                <p>{{ Form::label('email', "Adresse Mail") }}</p>
+                {{ Form::email('email', null) }}
+                <p>{{ Form::label('password', 'Mot de passe') }}</p>
+                {{ Form::password('password', null) }}
+                <p>{{ Form::button('Envoyer') }}</p>
+                {{ Form::close() }}
             </div>
-        </div>
+            <div class="signIn-redirection">
+                <h3>Pas encore de compte ?</h3>
+                <p><a href="{{ url('sign-up') }}" class="redirection-link">Cliquez ici</a> pour vous enregistrer.</p>
+            </div>
+        </section>
     </body>
-    <script src="{{ asset('js/burger-button.js') }}"></script>
 </html>

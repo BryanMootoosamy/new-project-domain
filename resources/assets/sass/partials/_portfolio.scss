@@ -1,4 +1,4 @@
-#folio{
+.site-content{
     z-index: 0;
     height: 85vh;
     width: 100vw;
@@ -9,11 +9,36 @@
         font-family: $roboto;
         font-size: 1.5em;
         color: white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-decoration: underline;
     }
     #profile-image{
         img{
             border-radius: 100%;
             width: 25%;
+        }
+    }
+    .content{
+        font-family: $roboto;
+        color: whitesmoke;
+        width: 100vw;
+        display: block;
+        h3{
+            text-decoration: underline;
+            margin-bottom: 2%;
+        }
+        .left, .right{
+            margin: auto;
+            width: 80%;
+            background-color: rgba(0,0,0,0.65);
+            padding: 2vh 2vw;
+        }
+        .right ul li a{
+            color: whitesmoke;
+            &:hover{
+                color: rgb(231, 160, 102);
+            }
         }
     }
 }

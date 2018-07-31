@@ -1,0 +1,57 @@
+.form-container{
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-family: $roboto;
+    font-size: 1.2em;
+    h3{
+        padding-top: 6%;
+        font-size: 1.4em;
+        color: whitesmoke;
+        text-decoration: underline;
+        margin-bottom: 6%;
+    }
+    form{
+        label{
+            color: whitesmoke;
+            margin-top: 2%;
+        }
+        input{
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+        button{
+            margin-top: 4%;
+            background: none;
+            border: none;
+            color: whitesmoke;
+            font-family: $menufont;
+            font-size: 1.3em;
+            background-color: rgb(53, 44, 44);
+            border-radius: 25%;
+            padding: 3%;
+            &:hover{
+                color: rgb(53, 44, 44);
+                background-color: whitesmoke;
+            }
+        }
+    }
+}
+.signIn-redirection{
+    h3{
+        font-family: $roboto;
+        font-size: 1.4em;
+        color: whitesmoke;
+        text-decoration: underline;
+        margin-bottom: 6%;
+        margin-top: 6%;
+    }
+    p, a{
+        font-family: $roboto;
+        font-size: 1em;
+        color: whitesmoke;
+    }
+    a{
+        font-size: 1em;
+    }
+}

@@ -493,7 +493,7 @@ table {
           transform: scale(1) rotate(0deg);
 }
 
-#folio {
+.site-content {
   z-index: 0;
   height: 85vh;
   width: 100vw;
@@ -503,14 +503,108 @@ table {
   text-align: center;
 }
 
-#folio h2 {
+.site-content h2 {
   font-family: "Roboto Mono";
   font-size: 1.5em;
   color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-decoration: underline;
 }
 
-#folio #profile-image img {
+.site-content #profile-image img {
   border-radius: 100%;
   width: 25%;
+}
+
+.site-content .content {
+  font-family: "Roboto Mono";
+  color: whitesmoke;
+  width: 100vw;
+  display: block;
+}
+
+.site-content .content h3 {
+  text-decoration: underline;
+  margin-bottom: 2%;
+}
+
+.site-content .content .left,
+.site-content .content .right {
+  margin: auto;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2vh 2vw;
+}
+
+.site-content .content .right ul li a {
+  color: whitesmoke;
+}
+
+.site-content .content .right ul li a:hover {
+  color: #e7a066;
+}
+
+.form-container {
+  display: block;
+  width: 80%;
+  margin: auto;
+  font-family: "Roboto Mono";
+  font-size: 1.2em;
+}
+
+.form-container h3 {
+  padding-top: 6%;
+  font-size: 1.4em;
+  color: whitesmoke;
+  text-decoration: underline;
+  margin-bottom: 6%;
+}
+
+.form-container form label {
+  color: whitesmoke;
+  margin-top: 2%;
+}
+
+.form-container form input {
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.form-container form button {
+  margin-top: 4%;
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-family: "Gugi";
+  font-size: 1.3em;
+  background-color: #352c2c;
+  border-radius: 25%;
+  padding: 3%;
+}
+
+.form-container form button:hover {
+  color: #352c2c;
+  background-color: whitesmoke;
+}
+
+.signIn-redirection h3 {
+  font-family: "Roboto Mono";
+  font-size: 1.4em;
+  color: whitesmoke;
+  text-decoration: underline;
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+
+.signIn-redirection p,
+.signIn-redirection a {
+  font-family: "Roboto Mono";
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+.signIn-redirection a {
+  font-size: 1em;
 }
 

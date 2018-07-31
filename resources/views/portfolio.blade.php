@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/app.css">
-        <title>Home</title>
+        <title>Portfolio</title>
     </head>
     <body>
         <div class="header-container">
@@ -20,11 +20,11 @@
         <div class="navigation" id="navigation">
             <ul class="menu">
                 <li><a class="menu-item" href="{{ url('/') }}">Homepage</a></li>
-                <li id="flux"><a class="menu-item" href="index.php?action=espaceperso">Espace Personnel</a></li>
+                <li id="flux"><a class="menu-item" href="{{ url('tchat') }}">Tchat</a></li>
                 <li><a class="menu-item" href="{{ url('portfolio') }}">Portfolio</a></li>
             </ul>
         </div>
-        <div id='folio'>
+        <div class="site-content">
             <h2>A propos</h2>
             <div id="profile-image">
                 <img src="{{ asset('images/face.jpg') }}" alt="Photo de profil">
